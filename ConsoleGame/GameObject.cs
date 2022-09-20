@@ -22,7 +22,6 @@ namespace ConsoleGame
     // К таким относится: игрок, еда, предупреждение о появлении пули, счётчик
     internal class StaticObject : GameObject
     {
-        
         public override string Character { get; }
         public override ConsoleColor Color { get; }
         public override int Left { get; set; }
@@ -88,7 +87,7 @@ namespace ConsoleGame
         private ConsoleCleaner Cleaner { get; }
 
         public bool IsAlive { get; private set; }
-        
+
 
         public Bullet
         (
@@ -114,6 +113,7 @@ namespace ConsoleGame
             {
                 _top += 0.99;
             }
+
             Character = character;
             Color = color;
             IsAlive = true;
@@ -123,7 +123,7 @@ namespace ConsoleGame
         public void Update(double frameDuration)
         {
             int fps = (int)(1.0 / frameDuration);
-            
+
             double newTop = _top + _verSpeed / fps;
             double newLeft = _left + _horSpeed / fps;
 

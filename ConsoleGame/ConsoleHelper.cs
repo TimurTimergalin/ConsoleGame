@@ -43,7 +43,6 @@ namespace ConsoleGame
 
         public static FontInfo[] SetCurrentFont(string font, short fontSize = 0)
         {
-
             FontInfo before = new FontInfo
             {
                 cbSize = Marshal.SizeOf<FontInfo>()

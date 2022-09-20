@@ -8,6 +8,7 @@ namespace ConsoleGame
     {
         // Хранит, сколько времени прошло с момента последнего нажатия клавиши
         private readonly Dictionary<ConsoleKey, double> _durations;
+
         // Минимальный период времени, который должен пройти, чтобы нажатие клавиши было обработано
         private readonly double _minDelay;
 
@@ -63,4 +64,3 @@ namespace ConsoleGame
         }
     }
 }
-

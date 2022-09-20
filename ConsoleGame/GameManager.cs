@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Threading;
 
 namespace ConsoleGame
 {
@@ -41,7 +40,7 @@ namespace ConsoleGame
 
             inst.Run();
         }
-        
+
         private class KeyManager : AbstractKeyManager
         {
             private GameManager _parent;
@@ -98,8 +97,7 @@ namespace ConsoleGame
                 {
                     finalLeft = _parent.GameMap.Left;
                 }
-                else
-                if (finalLeft < _parent.GameMap.Left)
+                else if (finalLeft < _parent.GameMap.Left)
                 {
                     finalLeft = _parent.GameMap.Right;
                 }
@@ -165,6 +163,7 @@ namespace ConsoleGame
                 Config.Get().BulletSummonerColor
             );
         }
+
         private void ChangeFoodLocation()
         {
             int left, top;
@@ -195,7 +194,7 @@ namespace ConsoleGame
             {
                 return res;
             }
-            
+
             Cleaner.Clear();
 
             if
@@ -214,7 +213,7 @@ namespace ConsoleGame
             bulletManager.Print();
             return LoopState.Continue;
         }
-        
+
 
         public override LoopState Action()
         {
@@ -259,19 +258,19 @@ namespace ConsoleGame
             if (cki.Key != ConsoleKey.Escape)
             {
                 keyManager.Reset();
-                
+
                 Player.Left = GameMap.Center.Item1;
                 Player.Top = GameMap.Center.Item2;
-                
+
                 Cleaner.Reset();
-                
+
                 ChangeFoodLocation();
-                
+
                 counter.Reset();
-                
+
                 bulletManager.Reset();
                 Run();
-            } 
+            }
         }
     }
 }

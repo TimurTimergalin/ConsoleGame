@@ -10,24 +10,31 @@ namespace ConsoleGame
 
         // Цвет заднего фона
         public ConsoleColor BackgroundColor { get; }
+
         // Цвет Текста, границ и пуль
         public ConsoleColor ForegroundColor { get; }
 
         // Символ игрока
         public string PlayerChar { get; }
+
         // Цвет символа игрока
         public ConsoleColor PlayerColor { get; }
 
         // Символ еды
         public string FoodChar { get; }
+
         // Цвет символа еды
         public ConsoleColor FoodColor { get; }
+
         // Минимальный промежуток времени между нажатиями одной и той же клавиши
         public double MinDelay { get; }
+
         // Минимальное расстояние (декартовое) от игрока, на котором может появится еда
         public int MinDistance { get; }
+
         // Символ для пули
         public string BulletCharacter { get; }
+
         // Цвет предупреждения о появлении пулм
         public ConsoleColor BulletSummonerColor { get; }
 

@@ -31,10 +31,16 @@ namespace ConsoleGame
 
         // Тело основного цикла игры
         public abstract LoopState Action();
+
         // Код, запускающийся перед началом цикла
-        public virtual void Start() {}
+        public virtual void Start()
+        {
+        }
+
         // Код, запускающийся сразу после окончания цикла
-        public virtual void End() {}
+        public virtual void End()
+        {
+        }
 
         // Запуск цикла
         public void Run()

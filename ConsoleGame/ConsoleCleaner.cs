@@ -24,10 +24,11 @@ namespace ConsoleGame
             {
                 int left, top;
                 (left, top) = coord;
-                
+
                 Console.SetCursorPosition(left, top);
                 Console.Write(' ');
             }
+
             _toClear.Clear();
         }
     }
