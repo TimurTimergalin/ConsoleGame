@@ -2,6 +2,7 @@
 
 namespace ConsoleGame
 {
+    // Вынес этот функционал в отдельный класс, потому что думал, что понадобятся ещё реализации
     internal abstract class Border
     {
         public abstract int Top { get; }
@@ -20,6 +21,7 @@ namespace ConsoleGame
         }
     }
 
+    // Класс, хранящий параметры консоли
     internal class Map : Border
     {
         public int ConsoleWidth { get; }

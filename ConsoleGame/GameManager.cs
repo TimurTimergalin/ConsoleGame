@@ -41,7 +41,7 @@ namespace ConsoleGame
 
             inst.Run();
         }
-
+        
         private class KeyManager : AbstractKeyManager
         {
             private GameManager _parent;
@@ -51,6 +51,7 @@ namespace ConsoleGame
                 _parent = parent;
             }
 
+            // Метод, отвечающий за обработку "аналогичных клавишь
             public ConsoleKey ActualKey(ConsoleKey key)
             {
                 switch (key)
@@ -164,7 +165,6 @@ namespace ConsoleGame
                 Config.Get().BulletSummonerColor
             );
         }
-
         private void ChangeFoodLocation()
         {
             int left, top;
@@ -186,6 +186,8 @@ namespace ConsoleGame
             GameMap.Print();
         }
 
+        // Проверка состояния игрока, еды и пуль
+        // Отрисовка текущего кадра
         private LoopState UpdateFrame()
         {
             LoopState res = bulletManager.Update(FrameDuration);
@@ -212,6 +214,7 @@ namespace ConsoleGame
             bulletManager.Print();
             return LoopState.Continue;
         }
+        
 
         public override LoopState Action()
         {

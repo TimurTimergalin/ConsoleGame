@@ -3,6 +3,8 @@ using System.Threading;
 
 namespace ConsoleGame
 {
+    // Описывает, каким образом запускается основной игровой цикл
+    // Ограничивает FPS игры
     public abstract class FPSManager
     {
         public enum LoopState
@@ -27,10 +29,14 @@ namespace ConsoleGame
             _nominalFrameDuration = 1000.0 / fps;
         }
 
+        // Тело основного цикла игры
         public abstract LoopState Action();
+        // Код, запускающийся перед началом цикла
         public virtual void Start() {}
+        // Код, запускающийся сразу после окончания цикла
         public virtual void End() {}
 
+        // Запуск цикла
         public void Run()
         {
             Start();

@@ -2,6 +2,7 @@
 
 namespace ConsoleGame
 {
+    // Базовый класс для всех объектов на игровом поле
     internal abstract class GameObject
     {
         public abstract string Character { get; }
@@ -17,6 +18,8 @@ namespace ConsoleGame
         }
     }
 
+    // Класс, описывающий поведение объектов, не двигующихся сами по себе
+    // К таким относится: игрок, еда, предупреждение о появлении пули, счётчик
     internal class StaticObject : GameObject
     {
         
@@ -34,6 +37,7 @@ namespace ConsoleGame
         }
     }
 
+    // Класс, описывающий поведение счётчика
     internal class Counter : StaticObject
     {
         public int Points { get; private set; }
@@ -56,6 +60,7 @@ namespace ConsoleGame
         }
     }
 
+    // Класс, описывающий поведение пули
     internal class Bullet : GameObject
     {
         public override string Character { get; }

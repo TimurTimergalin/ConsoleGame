@@ -29,8 +29,10 @@ namespace ConsoleGame
         }
     }
 
+    // Класс, отвечающий за поведение пуль
     internal class BulletManager
     {
+        // Класс, отвечающий за расчёт скорости пуль и частоты их появления
         private class DifficultyManager
         {
             public double SpawnPeriod => 1.0 / (0.01 * Math.Pow(_counter.Points, 2) + 1);
@@ -46,6 +48,8 @@ namespace ConsoleGame
             }
         }
 
+        // Предупреждение (красная решетка), появляющееся перед появление пули
+        // Время появление пули описано здесь, не в BulletManager
         private class BulletSummoner : StaticObject
         {
             private Directions Direction { get; }
@@ -77,6 +81,9 @@ namespace ConsoleGame
                 IsAlive = false;
             }
 
+            // Обновление состояния:
+            // После прохождения достаточного количества времени BulletSummoner "умирает"
+            // и появляется пуля
             public void Update(double frameDuration)
             {
                 _counter += frameDuration;
@@ -154,6 +161,10 @@ namespace ConsoleGame
             );
         }
 
+        // Обновление состояния менеджера:
+        // Обновляются состояния всех пуль и BulletMeneger-ов;
+        // Удаляются все "мёртвые" пули и BulletMeneger-ы;
+        // Проверяется столкновение с игроком;
         public FPSManager.LoopState Update(double frameDuration)
         {
             HashSet<BulletSummoner> BStoRemove = new HashSet<BulletSummoner>();
