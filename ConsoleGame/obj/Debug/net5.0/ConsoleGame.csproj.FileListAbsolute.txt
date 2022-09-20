@@ -1,0 +1,16 @@
+D:\RiderSolutions\ConsoleGame\ConsoleGame\bin\Debug\net5.0\ConsoleGame.exe
+D:\RiderSolutions\ConsoleGame\ConsoleGame\bin\Debug\net5.0\ConsoleGame.deps.json
+D:\RiderSolutions\ConsoleGame\ConsoleGame\bin\Debug\net5.0\ConsoleGame.runtimeconfig.json
+D:\RiderSolutions\ConsoleGame\ConsoleGame\bin\Debug\net5.0\ConsoleGame.runtimeconfig.dev.json
+D:\RiderSolutions\ConsoleGame\ConsoleGame\bin\Debug\net5.0\ConsoleGame.dll
+D:\RiderSolutions\ConsoleGame\ConsoleGame\bin\Debug\net5.0\ref\ConsoleGame.dll
+D:\RiderSolutions\ConsoleGame\ConsoleGame\bin\Debug\net5.0\ConsoleGame.pdb
+D:\RiderSolutions\ConsoleGame\ConsoleGame\obj\Debug\net5.0\ConsoleGame.csprojAssemblyReference.cache
+D:\RiderSolutions\ConsoleGame\ConsoleGame\obj\Debug\net5.0\ConsoleGame.GeneratedMSBuildEditorConfig.editorconfig
+D:\RiderSolutions\ConsoleGame\ConsoleGame\obj\Debug\net5.0\ConsoleGame.AssemblyInfoInputs.cache
+D:\RiderSolutions\ConsoleGame\ConsoleGame\obj\Debug\net5.0\ConsoleGame.AssemblyInfo.cs
+D:\RiderSolutions\ConsoleGame\ConsoleGame\obj\Debug\net5.0\ConsoleGame.csproj.CoreCompileInputs.cache
+D:\RiderSolutions\ConsoleGame\ConsoleGame\obj\Debug\net5.0\ConsoleGame.dll
+D:\RiderSolutions\ConsoleGame\ConsoleGame\obj\Debug\net5.0\ref\ConsoleGame.dll
+D:\RiderSolutions\ConsoleGame\ConsoleGame\obj\Debug\net5.0\ConsoleGame.pdb
+D:\RiderSolutions\ConsoleGame\ConsoleGame\obj\Debug\net5.0\ConsoleGame.genruntimeconfig.cache
